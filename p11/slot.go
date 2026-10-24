@@ -3,7 +3,7 @@
 
 package p11
 
-import "github.com/eclipse-keypont/pkcs11-go/cryptoki"
+import "github.com/ad3n/pkcs11-go/cryptoki"
 
 // Slot is a slot in a loaded module.
 type Slot struct {

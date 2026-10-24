@@ -22,7 +22,7 @@ import (
 	"sync"
 	"unsafe"
 
-	_ "github.com/eclipse-keypont/pkcs11-go/internal/headers" // vendor anchor: ensures go mod vendor copies the C headers
+	_ "github.com/ad3n/pkcs11-go/internal/headers" // vendor anchor: ensures go mod vendor copies the C headers
 )
 
 // errClosed is returned by Ctx methods invoked after Destroy.

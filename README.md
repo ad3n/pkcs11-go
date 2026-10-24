@@ -1,3 +1,5 @@
+> This fork uses module `github.com/ad3n/pkcs11-go`. It is based on upstream v1.2.0-rc4 with macOS zeroization and single-allocation ULONG encoding fixes. See [FORK_PATCHES.md](FORK_PATCHES.md).
+
 # pkcs11-go
 
 <!-- Badges: every one is drawn by shields.io with style=flat-square, so they share a height, a

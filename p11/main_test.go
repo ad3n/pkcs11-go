@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/eclipse-keypont/pkcs11-go/cryptoki"
+	"github.com/ad3n/pkcs11-go/cryptoki"
 )
 
 // These tests exercise the high-level p11 layer against a real module when

@@ -1,5 +1,5 @@
-module github.com/eclipse-keypont/pkcs11-go
+module github.com/ad3n/pkcs11-go
 
-go 1.21.0
+go 1.25.0
 
-toolchain go1.27.2
+toolchain go1.27.3

@@ -91,11 +91,18 @@ func cMalloc(n C.size_t) unsafe.Pointer {
 // does not fit the platform's CK_ULONG (e.g. a value >= 2^32 on Windows),
 // turning silent truncation into a visible programming error.
 func ckULong(v uint) []byte {
-	cv := C.CK_ULONG(v)
-	if uint(cv) != v {
+	if uint(C.CK_ULONG(v)) != v {
 		panic("cryptoki: value overflows CK_ULONG on this platform")
 	}
-	return C.GoBytes(unsafe.Pointer(&cv), C.int(unsafe.Sizeof(cv)))
+
+	result := make([]byte, ULongSize)
+	if ULongSize == 4 {
+		binary.NativeEndian.PutUint32(result, uint32(v))
+		return result
+	}
+
+	binary.NativeEndian.PutUint64(result, uint64(v))
+	return result
 }
 
 // ULongSize is the width in bytes of a CK_ULONG on this platform: 8 under LP64

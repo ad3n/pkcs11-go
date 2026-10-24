@@ -6,7 +6,7 @@ package p11
 import (
 	"fmt"
 
-	"github.com/eclipse-keypont/pkcs11-go/cryptoki"
+	"github.com/ad3n/pkcs11-go/cryptoki"
 )
 
 // Object is a handle to an object on a token, bound to the session it was found

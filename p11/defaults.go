@@ -3,7 +3,7 @@
 
 package p11
 
-import "github.com/eclipse-keypont/pkcs11-go/cryptoki"
+import "github.com/ad3n/pkcs11-go/cryptoki"
 
 // withSecureDefaults returns tmpl with secure-by-default attributes added for
 // any the caller did not set explicitly (P11):

@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/eclipse-keypont/pkcs11-go/cryptoki"
+	"github.com/ad3n/pkcs11-go/cryptoki"
 )
 
 func TestModuleInfoAndSlots(t *testing.T) {

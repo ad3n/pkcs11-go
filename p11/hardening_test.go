@@ -6,7 +6,7 @@ package p11
 import (
 	"testing"
 
-	"github.com/eclipse-keypont/pkcs11-go/cryptoki"
+	"github.com/ad3n/pkcs11-go/cryptoki"
 )
 
 // TestWithSecureDefaultsAddsMissing checks that the secure attributes are added

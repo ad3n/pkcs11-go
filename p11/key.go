@@ -3,7 +3,7 @@
 
 package p11
 
-import "github.com/eclipse-keypont/pkcs11-go/cryptoki"
+import "github.com/ad3n/pkcs11-go/cryptoki"
 
 // SecretKey, PublicKey and PrivateKey are Objects specialised with the crypto
 // operations appropriate to each. They share Object's identity fields, so an

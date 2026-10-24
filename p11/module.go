@@ -6,7 +6,7 @@ package p11
 import (
 	"sync"
 
-	"github.com/eclipse-keypont/pkcs11-go/cryptoki"
+	"github.com/ad3n/pkcs11-go/cryptoki"
 )
 
 // Module is a loaded and initialised PKCS #11 module. It owns the underlying

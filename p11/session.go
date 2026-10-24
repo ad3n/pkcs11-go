@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/eclipse-keypont/pkcs11-go/cryptoki"
+	"github.com/ad3n/pkcs11-go/cryptoki"
 )
 
 // Session is an open session on a token. It is the entry point for finding,

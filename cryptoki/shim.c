@@ -108,8 +108,7 @@ void ck_memzero(void *p, size_t n) {
 #if defined(_WIN32)
 	SecureZeroMemory(p, n);
 #elif defined(__OpenBSD__) || defined(__FreeBSD__) || \
-    (defined(__GLIBC__) && (__GLIBC__ > 2 || (__GLIBC__ == 2 && __GLIBC_MINOR__ >= 25))) || \
-    (defined(__APPLE__) && defined(__MACH__))
+    (defined(__GLIBC__) && (__GLIBC__ > 2 || (__GLIBC__ == 2 && __GLIBC_MINOR__ >= 25)))
 	explicit_bzero(p, n);
 #else
 	volatile unsigned char *v = (volatile unsigned char *)p;
